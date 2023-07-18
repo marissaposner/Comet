@@ -1,4 +1,6 @@
 # Comet
+![image](https://github.com/marissaposner/Comet/assets/46746064/358eed59-645f-4237-afb2-edb8175575c3)
+
 ## Goal: 
 
 Train a ML model on-chain to prove that the model you claim to have used to train some data is the actual model you used.
