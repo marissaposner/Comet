@@ -1,5 +1,6 @@
 # Comet
-![image](https://github.com/marissaposner/Comet/assets/46746064/358eed59-645f-4237-afb2-edb8175575c3)
+
+![image](https://github.com/marissaposner/Comet/assets/46746064/4ba44d96-29f3-4adf-8376-54a21c84caf4)
 
 ## Goal: 
 
