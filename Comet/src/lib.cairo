@@ -64,6 +64,11 @@ let tensor_y = TensorTrait::new(shape.span(), y.span(), extra);
 let (res_a, res_b)  = fc3(tensor_x, tensor_y);
 
 
+assert( *res_a.data.at(0).mag == 10, 'success_a');
+assert( *res_a.data.at(0).sign == true, 'success_a');
+assert( *res_b.data.at(0).mag == 1, 'success_b');
+assert( *res_b.data.at(0).sign == false, 'success_b');
+
 
 (*res_a.data.at(0).mag).print();
 
