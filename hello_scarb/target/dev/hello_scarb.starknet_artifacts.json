@@ -1,0 +1,1 @@
+{"version":1,"contracts":[{"id":"nt8a03fjlnlru","package_name":"hello_scarb","contract_name":"SimpleStorage","artifacts":{"sierra":"hello_scarb_SimpleStorage.sierra.json","casm":null}}]}
