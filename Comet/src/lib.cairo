@@ -11,7 +11,7 @@ use orion::operators::tensor::implementations::impl_tensor_i32::{Tensor_i32, i32
 
 fn fc3(x: Tensor<i32>, y: Tensor<i32>) -> (Tensor<i32>, Tensor<i32>) {
     let sum_x = x.reduce_sum( 0, keepdims:true);
-    let sum_y = x.reduce_sum( 0, keepdims:true);
+    let sum_y = y.reduce_sum( 0, keepdims:true);
     let sum_xy = x.matmul(@y);
     let sum_xx = x.matmul(@x);
     let sum_yy = y.matmul(@y);
@@ -64,9 +64,9 @@ let tensor_y = TensorTrait::new(shape.span(), y.span(), extra);
 let (res_a, res_b)  = fc3(tensor_x, tensor_y);
 
 
-assert( *res_a.data.at(0).mag == 10, 'success_a');
-assert( *res_a.data.at(0).sign == true, 'success_a');
-assert( *res_b.data.at(0).mag == 1, 'success_b');
+assert( *res_a.data.at(0).mag == 2, 'success_a');
+assert( *res_a.data.at(0).sign == false, 'success_a');
+assert( *res_b.data.at(0).mag == 0, 'success_b');
 assert( *res_b.data.at(0).sign == false, 'success_b');
 
 
